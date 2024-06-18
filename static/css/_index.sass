@@ -1,0 +1,259 @@
+@import "vars"
+@import "mixins"
+
+.banner
+  &-area
+    background-image: url("../../public/images/index-banner.jpeg")
+    background-size: cover
+    background-position: center
+    display: flex
+    flex-direction: column
+    gap: .9rem
+    padding-left: 2.4rem
+    border-radius: 2rem
+
+  &-title
+    margin-top: 9.5rem
+    @include titleFont(3rem)
+    color: $colorGeneral
+    width: 26rem
+    line-height: 3.2rem
+
+  &-text
+    width: 20rem
+
+  &-button
+    cursor: pointer
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: .45rem
+    width: 8rem
+    padding: 1.18rem
+    color: #fff
+    background-color: $colorGeneral
+    border: solid 4px $colorGeneral
+    border-radius: .8rem
+    font-size: .8rem
+    margin-bottom: 9.5rem
+    transition: all .3s
+
+    &:hover
+      border-color: $colorStylish
+      color: $colorStylish
+      box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, .4)
+
+    &:active
+      transform: scale(.9)
+
+    &-icon
+      color: $colorStylish
+
+.project
+  &-area
+    margin-top: 4.4rem
+    display: flex
+    flex-direction: column
+    gap: 4.3rem
+
+  &-heading
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 0.4rem
+
+    &__title
+      @include titleFont(2.27rem)
+
+    &__text
+      width: 22rem
+      text-align: center
+
+  &-items
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    gap: 2.55rem
+
+    &__item
+      display: flex
+      flex-direction: column
+
+      &:hover &-content__textbox-title, &:hover &-content__textbox-text
+        color: $colorStylish
+
+      &:hover &-content__button
+        color: #fff
+        background-color: $colorStylish
+
+      &:hover &-image
+        filter: contrast(0.7)
+
+      &:active &-content__button
+        background-color: $colorStylishBright
+
+      &-image
+        width: 24rem
+        height: 25rem
+        background-size: cover
+        background-position: center
+        transition: all .3s
+
+      &-content
+        padding-top: 1rem
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        &__textbox
+          &-title
+            @include titleFont(1.14rem)
+            transition: all .3s
+
+          &-text
+            color: $colorText
+            transition: all .3s
+
+        &__button
+          display: flex
+          justify-content: center
+          align-items: center
+          background-color: $colorStylishBright
+          width: 3.18rem
+          height: 3.18rem
+          border-radius: 1.59rem
+          color: $colorGeneral
+          transition: all .3s
+
+  .project
+    &-image1
+      background-image: url("../../public/images/index-project1.jpeg")
+      border-top-right-radius: 4rem
+
+    &-image2
+      background-image: url("../../public/images/index-project2.jpeg")
+      border-top-left-radius: 4rem
+
+    &-image3
+      background-image: url("../../public/images/index-project3.jpeg")
+      border-bottom-right-radius: 4rem
+
+    &-image4
+      background-image: url("../../public/images/index-project4.jpeg")
+      border-bottom-left-radius: 4rem
+
+.counter
+  background-color: $colorStylishBright
+  margin-top: 4.4rem
+
+  &-area
+    padding: 6.8rem 1rem
+    display: flex
+
+  &-item
+    width: 25%
+    display: flex
+    flex-direction: column
+    gap: 1rem
+    border-right: solid 1px
+    border-color: $colorStylish
+    align-items: center
+
+    &:last-child
+      border: none
+
+    &__title
+      @include titleFont(3.9rem)
+      color: $colorStylish
+      line-height: 1
+
+.blog
+  margin-top: 4.4rem
+
+  &-area
+    display: flex
+    flex-direction: column
+    gap: 2.4rem
+
+  &-heading
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: .5rem
+
+    &__title
+      @include titleFont(2.3rem)
+      width: 15rem
+      line-height: 1.1
+      text-align: center
+
+    &__text
+      width: 22rem
+      text-align: center
+
+  &-items
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    gap: 1rem
+
+    &__item
+      width: 32%
+      padding: 1rem
+      border: solid 1px $colorStylishBright
+      border-radius: 3rem
+      transition: all .3s
+
+      &__image-box
+        position: relative
+
+        &__image
+          width: 100%
+          border-top-left-radius: 2rem
+          border-top-right-radius: 2rem
+
+        &__tag
+          position: absolute
+          bottom: 1.5rem
+          left: 1rem
+          background-color: #fff
+          font-size: .7rem
+          width: 5.9rem
+          height: 1.9rem
+          padding-left: 0.5rem
+          display: flex
+          align-items: center
+          border-top-left-radius: .5rem
+          border-top-right-radius: .5rem
+          border-bottom-right-radius: .5rem
+
+      &__title
+        @include titleFont(1.2rem)
+        max-width: 13.9rem
+        line-height: 1.1
+        padding-top: 1rem
+        padding-bottom: 1.4rem
+
+      &__bottom-box
+        display: flex
+        justify-content: space-between
+        align-items: center
+        font-size: .7rem
+        padding-bottom: 1.2rem
+
+        &__button
+          display: flex
+          justify-content: center
+          align-items: center
+          width: 2rem
+          height: 2rem
+          border-radius: 1rem
+          background-color: $colorStylishBright
+          transition: all .3s
+
+      &:hover
+        background-color: $colorStylishBright
+
+      &:hover &__bottom-box__button
+        background-color: #fff
+

@@ -1,0 +1,41 @@
+@import "vars"
+@import "mixins"
+
+
+.header
+  &-area
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 6.8rem
+
+  &__logo
+    display: flex
+    gap: 10px
+    align-items: center
+
+    &-image
+      width: 1.55rem
+      height: 1.55rem
+
+    &-name
+      @include titleFont(40px)
+      color: $colorGeneral
+
+  &__nav
+    &-link
+      display: inline-block
+      font-size: 0.9rem
+      padding: 2rem 1rem
+      color: $colorGeneral
+      transition: all .3s
+
+      &:last-child
+        padding-right: 0
+
+      &:hover
+        color: $colorStylish
+
+      &:active
+        color: $colorStylishBright

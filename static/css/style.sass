@@ -1,0 +1,39 @@
+@import "vars"
+@import "mixins"
+
+html
+  font-size: 22px
+
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+a
+  text-decoration: none
+  color: $colorText
+
+body
+  font-family: "Jost", sans-serif
+  min-height: 100vh
+  background-color: #fff
+  font-size: 1rem
+  font-weight: 400
+  color: $colorText
+
+.center
+  padding-left: calc(50% - ($widthContent / 2 + $sidePadding))
+  padding-right: calc(50% - ($widthContent / 2 + $sidePadding))
+
+.container
+  padding: 0 $sidePadding
+
+@import "header"
+@import "index"
+@import "blog"
+@import "footer"
+
+.current-link
+  cursor: default
+  pointer-events: none
+  color: $colorStylish
