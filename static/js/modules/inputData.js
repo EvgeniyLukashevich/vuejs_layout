@@ -2,7 +2,6 @@ const blogItems = [
     {
         href: "#",
         image: "./public/images/blog1.jpeg",
-        imageMin: "./public/images/blog1-min.png",
         tag: "Дизайн Кухни",
         title: "Создадим лучший макет перепланировки",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, architecto aspernatur at aut " +
@@ -17,7 +16,6 @@ const blogItems = [
     {
         href: "#",
         image: "./public/images/blog2.jpeg",
-        imageMin: "./public/images/blog2-min.png",
         tag: "Дизайн для жизни",
         title: "Лучшие интерьерные идеи по низкой цене",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto, at autem beatae " +
@@ -30,7 +28,6 @@ const blogItems = [
     {
         href: "#",
         image: "./public/images/blog3.jpeg",
-        imageMin: "./public/images/blog3-min.png",
         tag: "Дизайн Интерьера",
         title: "Лучшие интерьерные решения для офисов",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, deserunt eaque eius eveniet, " +
@@ -43,7 +40,6 @@ const blogItems = [
     {
         href: "#",
         image: "./public/images/blog4.jpeg",
-        imageMin: "./public/images/blog4-min.png",
         tag: "Дизайн Кухни",
         title: "Создадим лучший макет перепланировки",
         text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequuntur excepturi nobis qui sunt " +
@@ -54,7 +50,6 @@ const blogItems = [
     {
         href: "#",
         image: "./public/images/blog5.jpeg",
-        imageMin: "./public/images/blog5-min.png",
         tag: "Дизайн для жизни",
         title: "Лучшие интерьерные идеи по низкой цене",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim est et ex non porro " +
@@ -73,7 +68,6 @@ const blogItems = [
     {
         href: "#",
         image: "./public/images/blog6.jpeg",
-        imageMin: "./public/images/blog6-min.png",
         tag: "Дизайн Интерьера",
         title: "Лучшие интерьерные решения для офисов",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad alias assumenda beatae, commodi " +
@@ -86,9 +80,8 @@ const blogItems = [
     },
     {
         href: "#",
-        image: "./public/images/blog7.png",
-        imageMin: "./public/images/blog7-min.png",
-        tag: "Дизайн Интерьера",
+        image: "./public/images/blog7.jpeg",
+        tag: "Дизайн Кухни",
         title: "Low Cost Latest Invented Interior Designing Ideas",
         text: "С того времени этот, похожий на латинский, текст стал стандартом в печатной промышленности для " +
             "примеров шрифтов и текстов. Перед появлением электронных издательств дизайнеры импровизировали в " +

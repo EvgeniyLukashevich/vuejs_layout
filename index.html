@@ -196,9 +196,9 @@
                 </div>
 
                 <div class="blog-items">
-                    <a :href="item.href" v-for="(item, index) in items.slice(0, 3)" :key="index + 1" class="blog-items__item">
+                    <a :href="item.href" v-for="(item, index) in sortedByDateItems.slice(0, 3)" :key="index + 1" class="blog-items__item">
                         <div class="blog-items__item__image-box">
-                            <img :src="item.imageMin" :alt="item.tag" class="blog-items__item__image-box__image">
+                            <img :src="item.image" :alt="item.tag" class="blog-items__item__image-box__image">
                             <p class="blog-items__item__image-box__tag">
                                 {{ item.tag }}
                             </p>

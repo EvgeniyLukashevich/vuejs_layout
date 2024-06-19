@@ -60,7 +60,11 @@
                 <h2 class="blog-last-post__title">Последний пост</h2>
 
                 <a :href="lastItem.href" class="blog-last-post__item">
-                    <img :src="lastItem.image" :alt="lastItem.tag" class="blog-last-post__item__image">
+                    <div class="blog-last-post__item__image-box">
+                        <img :src="lastItem.image" :alt="lastItem.tag" class="blog-last-post__item__image-box__image">
+                    </div>
+
+
 
                     <div class="blog-last-post__item__text-box">
                         <h3 class="blog-last-post__item__text-box__title">
@@ -91,7 +95,7 @@
                 <div class="blog-items">
                     <a :href="item.href" v-for="(item, index) in sortedByDateItems.slice(0, 6)" :key="index" class="blog-items__item">
                         <div class="blog-items__item__image-box">
-                            <img :src="item.imageMin" :alt="item.tag" class="blog-items__item__image-box__image">
+                            <img :src="item.image" :alt="item.tag" class="blog-items__item__image-box__image">
                             <p class="blog-items__item__image-box__tag">
                                 {{ item.tag }}
                             </p>
