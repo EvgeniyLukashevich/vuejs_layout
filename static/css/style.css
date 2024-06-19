@@ -287,6 +287,9 @@ body {
   border: solid 1px rgb(244, 240, 236);
   border-radius: 3rem;
   transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .blog-items__item__image-box {
   position: relative;
@@ -405,6 +408,7 @@ body {
   width: 50%;
   height: 100%;
   align-self: center;
+  border-radius: 2.5rem;
 }
 .blog-last-post__item__text-box {
   width: 41%;
