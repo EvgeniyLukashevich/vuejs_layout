@@ -32,16 +32,16 @@
     padding: 1.18rem
     color: #fff
     background-color: $colorGeneral
-    border: solid 4px $colorGeneral
+    border: none
     border-radius: .8rem
     font-size: .8rem
     margin-bottom: 9.5rem
     transition: all .3s
 
     &:hover
-      border-color: $colorStylish
-      color: $colorStylish
-      box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, .4)
+      background-color: $colorStylishBright
+      color: $colorGeneral
+      box-shadow: 0.2rem 0.2rem 0.8rem rgba(0, 0, 0, .4)
 
     &:active
       transform: scale(.9)
@@ -224,17 +224,19 @@
           height: 100%
           object-fit: none
 
-        &__tag
+        &__tags
           position: absolute
           bottom: 1rem
           left: 1rem
           background-color: #fff
           font-size: .7rem
-          width: 5.9rem
-          height: 1.9rem
-          padding-left: 0.5rem
+          width: 7.5rem
+          padding: 0.5rem
           display: flex
+          flex-wrap: wrap
           align-items: center
+          line-height: 1
+          gap: .3rem
           border-top-left-radius: .5rem
           border-top-right-radius: .5rem
           border-bottom-right-radius: .5rem

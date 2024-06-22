@@ -1,0 +1,109 @@
+@import "vars"
+@import "mixins"
+
+.blog-details
+  &-area
+    display: flex
+    justify-content: space-between
+    margin-top: 9rem
+
+  &__post
+    width: 67%
+    display: flex
+    flex-direction: column
+    gap: 1.6rem
+
+    &__title
+      @include titleFont(2.27rem)
+
+    &__image-box
+      width: 100%
+      height: 24rem
+      position: relative
+      overflow: hidden
+      align-self: center
+      border-radius: 2.5rem
+
+      &__image
+        width: 100%
+        height: 100%
+        object-fit: cover
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+    &__tags-box
+      display: flex
+      justify-content: space-between
+      font-size: 0.73rem
+
+      &__tags
+        display: flex
+        padding-right: 2rem
+
+        &__tag
+          font-size: 0.73rem
+
+          &::after
+            content: "/"
+            margin: 0 0.5rem
+
+          &:last-child::after
+            content: none
+
+    &__quote-box
+      background-color: $colorStylishBright
+      width: 100%
+      padding: 2.4rem
+      border-radius: 2rem
+      display: flex
+      flex-direction: column
+      justify-content: end
+      align-items: center
+      @include titleFont(4rem)
+      font-style: italic
+      color: $colorStylish
+
+      &__quote
+        font-size: 1.2rem
+        text-align: center
+
+  &__tags
+    width: 28%
+    display: flex
+    flex-direction: column
+    gap: 1.1rem
+
+    &__title
+      @include titleFont(1.2rem)
+
+    &-box
+      display: flex
+      flex-wrap: wrap
+      gap: .5rem
+
+      &__tag
+        cursor: pointer
+        padding: .5rem 1rem
+        background-color: $colorStylishBright
+        border-radius: 1rem
+        border: 2px solid $colorStylishBright
+        transition: all .3s
+
+        &:hover
+          background-color: $colorGeneral
+          border-color: $colorGeneral
+          color: #fff
+
+        &:active
+          border-color: $colorStylishBright
+          color: $colorStylishBright
+
+
+.blog-details-posts
+  &-area
+    margin-top: 4rem
+    display: flex
+    flex-direction: column
+    gap: 2rem

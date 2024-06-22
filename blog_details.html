@@ -39,38 +39,40 @@
         <nav class="header__nav">
             <a href="index.html" class="header__nav-link">Домой</a>
             <a href="#" class="header__nav-link">Проект</a>
-            <a href="blog.html" class="header__nav-link current-link">Блог</a>
+            <a href="blog.html" class="header__nav-link">Блог</a>
         </nav>
     </div>
 </header>
 
 <main id="blog_app">
-    <section class="blog-banner blog-banner-main center">
+    <section class="blog-banner blog-banner-details center">
         <div class="blog-banner-area container">
-            <div class="blog-banner__title-box">
-                <h1 class="blog-banner__title-box__title"> {{ title }} </h1>
-                <div class="blog-banner__title-box__nav">
-                    <a href="index.html" class="blog-banner__title-box__nav__link">Домой</a> /
-                    <a href="blog.html" class="blog-banner__title-box__nav__link current-link">Блог</a>
+        </div>
+    </section>
+
+    <section class="blog-details center">
+        <div class="blog-details-area container">
+            <chosen-post :items="items"></chosen-post>
+
+            <div class="blog-details__tags">
+                <h3 class="blog-details__tags__title">Тэги</h3>
+                <div class="blog-details__tags-box">
+                    <p class="blog-details__tags-box__tag" v-for="tag in uniqueTags" @click="setCurrentTag(tag)"
+                       :class="{ 'selected-tag': tag === currentTag }">
+                        {{tag}}</p>
                 </div>
             </div>
+
         </div>
     </section>
 
-    <section class="blog-last-post center">
-        <div class="blog-last-post-area container">
-            <h2 class="blog-last-post__title">Последний пост</h2>
-            <post-big-card :item="lastItem"></post-big-card>
-        </div>
-    </section>
-
-    <section class="blog center">
-        <div class="blog-area container">
-            <h2 class="blog-last-post__title"> {{ title }} </h2>
-            <div class="blog-items">
-                <post-card v-for="(item, index) in sortedByDateItems.slice(1,7)" :key="item.id"
-                           :item="item"></post-card>
-            </div>
+    <section class="blog-details-posts center">
+        <div class="blog-details-posts-area container">
+            <h2 class="project-heading__title">
+                Другие статьи
+            </h2>
+            <post-big-card v-for="(item, index) in filteredByTagItems" :key="item.id"
+                           :item="item"></post-big-card>
         </div>
     </section>
 </main>

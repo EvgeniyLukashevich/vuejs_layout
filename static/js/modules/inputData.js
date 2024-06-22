@@ -1,8 +1,9 @@
 const blogItems = [
     {
-        href: "#",
+        id: "1",
+        href: "blog_details.html",
         image: "./public/images/blog1.jpeg",
-        tag: "Дизайн Кухни",
+        tags: ['Дизайн', "Столовая", "Интерьер"],
         title: "Создадим лучший макет перепланировки",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, architecto aspernatur at aut " +
             "exercitationem laudantium obcaecati odit repellat repudiandae sed similique sint tempora tempore, " +
@@ -14,9 +15,10 @@ const blogItems = [
         date: "19 декабря, 2022"
     },
     {
-        href: "#",
+        id: "2",
+        href: "blog_details.html",
         image: "./public/images/blog2.jpeg",
-        tag: "Дизайн для жизни",
+        tags: ['Дизайн', "Планировка", "Интерьер"],
         title: "Лучшие интерьерные идеи по низкой цене",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto, at autem beatae " +
             "esse eveniet exercitationem illo illum inventore ipsam maiores necessitatibus, odit, quas sit " +
@@ -26,10 +28,11 @@ const blogItems = [
         date: "22 декабря, 2022"
     },
     {
-        href: "#",
+        id: "3",
+        href: "blog_details.html",
         image: "./public/images/blog3.jpeg",
-        tag: "Дизайн Интерьера",
-        title: "Лучшие интерьерные решения для офисов",
+        tags: ['Планировка', "Кухня", "Интерьер"],
+        title: "Дизайнерские решения для офисов",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, deserunt eaque eius eveniet, " +
             "exercitationem fuga illo illum iure laborum laudantium maxime nam nisi sapiente sit vel. Dignissimos " +
             "fugit ipsam itaque maiores repellat saepe tempora! Cum ea explicabo, fugit magni non nostrum " +
@@ -38,20 +41,22 @@ const blogItems = [
         date: "25 декабря, 2022"
     },
     {
-        href: "#",
+        id: "4",
+        href: "blog_details.html",
         image: "./public/images/blog4.jpeg",
-        tag: "Дизайн Кухни",
-        title: "Создадим лучший макет перепланировки",
+        tags: ['Дизайн', "Кухня", "Столовая"],
+        title: "Создадим лучший интерьерный проект",
         text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequuntur excepturi nobis qui sunt " +
             "veritatis? Aperiam cupiditate laboriosam laudantium magnam, minima praesentium sint vel voluptatibus.",
         quote: "Minima praesentium sint vel voluptatibus",
         date: "21 декабря, 2022"
     },
     {
-        href: "#",
+        id: "5",
+        href: "blog_details.html",
         image: "./public/images/blog5.jpeg",
-        tag: "Дизайн для жизни",
-        title: "Лучшие интерьерные идеи по низкой цене",
+        tags: ['Дизайн', "Гостинная", "Интерьер"],
+        title: "Лучшие макеты для гостинных",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim est et ex non porro " +
             "praesentium vel! Accusamus accusantium, alias aliquid aperiam asperiores aut delectus dolores est " +
             "eveniet expedita fuga illum inventore ipsum labore magnam modi molestiae, nam nemo neque non nulla " +
@@ -66,10 +71,11 @@ const blogItems = [
         date: "22 декабря, 2022"
     },
     {
-        href: "#",
+        id: "6",
+        href: "blog_details.html",
         image: "./public/images/blog6.jpeg",
-        tag: "Дизайн Интерьера",
-        title: "Лучшие интерьерные решения для офисов",
+        tags: ['Интерьер', "Кухня", "Столовая"],
+        title: "Готовые решения для столовых",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad alias assumenda beatae, commodi " +
             "consectetur consequatur enim eveniet ex excepturi hic incidunt itaque libero minima modi nihil " +
             "obcaecati optio provident quibusdam recusandae similique tempora velit voluptatibus! Aspernatur " +
@@ -79,9 +85,10 @@ const blogItems = [
         date: "23 декабря, 2022"
     },
     {
-        href: "#",
+        id: "7",
+        href: "blog_details.html",
         image: "./public/images/blog7.jpeg",
-        tag: "Дизайн Кухни",
+        tags: ['Дизайн', "Столовая", "Планировка"],
         title: "Low Cost Latest Invented Interior Designing Ideas",
         text: "С того времени этот, похожий на латинский, текст стал стандартом в печатной промышленности для " +
             "примеров шрифтов и текстов. Перед появлением электронных издательств дизайнеры импровизировали в " +

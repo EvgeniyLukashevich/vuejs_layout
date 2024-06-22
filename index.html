@@ -1,275 +1,264 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
             href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet"
-        />
-        <link
+    />
+    <link
             href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
             rel="stylesheet"
-        />
-        <link
+    />
+    <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        />
-        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-        <script src="./static/js/script.js" defer type="module"></script>
+    />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./static/js/script.js" defer type="module"></script>
 
-        <link rel="stylesheet" href="./static/css/style.css" />
-        <title>Home</title>
-    </head>
+    <link rel="stylesheet" href="./static/css/style.css"/>
+    <title>Home</title>
+</head>
 
-    <body>
-        <header class="header center">
-            <div class="header-area container">
-                <a class="header__logo" href="index.html">
-                    <img
+<body>
+
+<header class="header center">
+    <div class="header-area container">
+        <a class="header__logo" href="index.html">
+            <img
+                    src="./public/images/Logo.png"
+                    alt=""
+                    class="header__logo-image"
+            />
+            <p class="header__logo-name">Interno</p>
+        </a>
+        <nav class="header__nav">
+            <a href="index.html" class="header__nav-link current-link">Домой</a>
+            <a href="#" class="header__nav-link">Проект</a>
+            <a href="blog.html" class="header__nav-link">Блог</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="banner center">
+        <div class="banner-area container">
+            <h2 class="banner-title">Пусть ваш дом будет уникальным</h2>
+            <p class="banner-text">
+                Существует много вариаций Lorem Ipsum, которые можно
+                использовать
+            </p>
+            <button class="banner-button">
+                Начать
+                <i class="banner-button-icon fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <section class="project center">
+        <div class="project-area container">
+            <div class="project-heading">
+                <h2 class="project-heading__title">
+                    Следите за нашими проектами
+                </h2>
+                <p class="project-heading__text">
+                    Хорошо известно, что читатель будет отвлекаться на
+                    читабельный контент страницы
+                </p>
+            </div>
+            <div class="project-items">
+
+                <a class="project-items__item" href="#">
+                    <div
+                            class="project-items__item-image project-image1"
+                    ></div>
+                    <div class="project-items__item-content">
+                        <div class="project-items__item-content__textbox">
+                            <h3
+                                    class="project-items__item-content__textbox-title"
+                            >
+                                Современная кухня
+                            </h3>
+                            <p
+                                    class="project-items__item-content__textbox-text"
+                            >
+                                Декор / Планировка
+                            </p>
+                        </div>
+                        <div
+                                class="project-items__item-content__button fas fa-chevron-right"
+                        ></div>
+                    </div>
+                </a>
+
+                <a class="project-items__item" href="#">
+                    <div
+                            class="project-items__item-image project-image2"
+                    ></div>
+                    <div class="project-items__item-content">
+                        <div class="project-items__item-content__textbox">
+                            <h3
+                                    class="project-items__item-content__textbox-title"
+                            >
+                                Современная кухня
+                            </h3>
+                            <p
+                                    class="project-items__item-content__textbox-text"
+                            >
+                                Декор / Планировка
+                            </p>
+                        </div>
+                        <div
+                                class="project-items__item-content__button fas fa-chevron-right"
+                        ></div>
+                    </div>
+                </a>
+
+                <a class="project-items__item" href="#">
+                    <div
+                            class="project-items__item-image project-image3"
+                    ></div>
+                    <div class="project-items__item-content">
+                        <div class="project-items__item-content__textbox">
+                            <h3
+                                    class="project-items__item-content__textbox-title"
+                            >
+                                Современная кухня
+                            </h3>
+                            <p
+                                    class="project-items__item-content__textbox-text"
+                            >
+                                Декор / Планировка
+                            </p>
+                        </div>
+                        <div
+                                class="project-items__item-content__button fas fa-chevron-right"
+                        ></div>
+                    </div>
+                </a>
+
+                <a class="project-items__item" href="#">
+                    <div
+                            class="project-items__item-image project-image4"
+                    ></div>
+                    <div class="project-items__item-content">
+                        <div class="project-items__item-content__textbox">
+                            <h3
+                                    class="project-items__item-content__textbox-title"
+                            >
+                                Современная кухня
+                            </h3>
+                            <p
+                                    class="project-items__item-content__textbox-text"
+                            >
+                                Декор / Планировка
+                            </p>
+                        </div>
+                        <div
+                                class="project-items__item-content__button fas fa-chevron-right"
+                        ></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="counter center">
+        <div class="counter-area container">
+            <article class="counter-item">
+                <h3 class="counter-item__title">12</h3>
+                <p class="counter-item__text">Лет опыта</p>
+            </article>
+            <article class="counter-item">
+                <h3 class="counter-item__title">85</h3>
+                <p class="counter-item__text">Успешных проектов</p>
+            </article>
+            <article class="counter-item">
+                <h3 class="counter-item__title">15</h3>
+                <p class="counter-item__text">Проектов в работе</p>
+            </article>
+            <article class="counter-item">
+                <h3 class="counter-item__title">95</h3>
+                <p class="counter-item__text">Счастливых клиентов</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="blog_app" class="blog center">
+        <div class="blog-area container">
+            <div class="blog-heading">
+                <h2 class="blog-heading__title">{{ title }}</h2>
+                <p class="blog-heading__text">
+                    {{ preTitle }}
+                </p>
+            </div>
+
+            <div class="blog-items">
+                <post-card v-for="(item, index) in sortedByDateItems.slice(0,3)" :key="item.id"
+                           :item="item"></post-card>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer center">
+    <div class="footer-area container">
+        <div class="footer-social footer-box">
+            <a class="header__logo" href="index.html">
+                <img
                         src="./public/images/Logo.png"
                         alt=""
                         class="header__logo-image"
-                    />
-                    <p class="header__logo-name">Interno</p>
+                />
+                <p class="header__logo-name">Interno</p>
+            </a>
+            <div class="footer-social__links">
+                <a
+                        href="twitter.com"
+                        class="footer-social__links__link fab fa-twitter"
+                ></a>
+                <a
+                        href="linkedin.com"
+                        class="footer-social__links__link fab fa-linkedin-in"
+                ></a>
+            </div>
+        </div>
+
+        <div class="footer-pages footer-box">
+            <h3 class="footer-box-title">Страницы</h3>
+            <nav class="footer-pages__nav">
+                <a href="index.html" class="footer-pages__nav-link"
+                >Домой</a
+                >
+                <a href="#" class="footer-pages__nav-link">Проект</a>
+                <a href="blog.html" class="footer-pages__nav-link">Блог</a>
+            </nav>
+        </div>
+
+        <div class="footer-contacts footer-box">
+            <h3 class="footer-box-title">Контакты</h3>
+            <div class="footer-contacts__box">
+                <address class="footer-contacts__box-item">
+                    55 East Birchwood Ave. Brooklyn, New York 11201
+                </address>
+                <a
+                        href="mailto:contact@interno.com"
+                        class="footer-contacts__box-item"
+                >contact@interno.com
                 </a>
-                <nav class="header__nav">
-                    <a href="index.html" class="header__nav-link current-link">Домой</a>
-                    <a href="#" class="header__nav-link">Проект</a>
-                    <a href="blog.html" class="header__nav-link">Блог</a>
-                </nav>
+                <a
+                        href="tel:+1234567890"
+                        class="footer-contacts__box-item"
+                >(123) 456 - 7890</a
+                >
             </div>
-        </header>
+        </div>
+    </div>
+</footer>
 
-        <section class="banner center">
-            <div class="banner-area container">
-                <h2 class="banner-title">Пусть ваш дом будет уникальным</h2>
-                <p class="banner-text">
-                    Существует много вариаций Lorem Ipsum, которые можно
-                    использовать
-                </p>
-                <button class="banner-button">
-                    Начать
-                    <i class="banner-button-icon fas fa-arrow-right"></i>
-                </button>
-            </div>
-        </section>
-
-        <section class="project center">
-            <div class="project-area container">
-                <div class="project-heading">
-                    <h2 class="project-heading__title">
-                        Следите за нашими проектами
-                    </h2>
-                    <p class="project-heading__text">
-                        Хорошо известно, что читатель будет отвлекаться на
-                        читабельный контент страницы
-                    </p>
-                </div>
-                <div class="project-items">
-                    
-                    <a class="project-items__item" href="#">
-                        <div
-                            class="project-items__item-image project-image1"
-                        ></div>
-                        <div class="project-items__item-content">
-                            <div class="project-items__item-content__textbox">
-                                <h3
-                                    class="project-items__item-content__textbox-title"
-                                >
-                                    Современная кухня
-                                </h3>
-                                <p
-                                    class="project-items__item-content__textbox-text"
-                                >
-                                    Декор / Планировка
-                                </p>
-                            </div>
-                            <div
-                                class="project-items__item-content__button fas fa-chevron-right"
-                            ></div>
-                        </div>
-                    </a>
-
-                    <a class="project-items__item" href="#">
-                        <div
-                            class="project-items__item-image project-image2"
-                        ></div>
-                        <div class="project-items__item-content">
-                            <div class="project-items__item-content__textbox">
-                                <h3
-                                    class="project-items__item-content__textbox-title"
-                                >
-                                    Современная кухня
-                                </h3>
-                                <p
-                                    class="project-items__item-content__textbox-text"
-                                >
-                                    Декор / Планировка
-                                </p>
-                            </div>
-                            <div
-                                class="project-items__item-content__button fas fa-chevron-right"
-                            ></div>
-                        </div>
-                    </a>
-
-                    <a class="project-items__item" href="#">
-                        <div
-                            class="project-items__item-image project-image3"
-                        ></div>
-                        <div class="project-items__item-content">
-                            <div class="project-items__item-content__textbox">
-                                <h3
-                                    class="project-items__item-content__textbox-title"
-                                >
-                                    Современная кухня
-                                </h3>
-                                <p
-                                    class="project-items__item-content__textbox-text"
-                                >
-                                    Декор / Планировка
-                                </p>
-                            </div>
-                            <div
-                                class="project-items__item-content__button fas fa-chevron-right"
-                            ></div>
-                        </div>
-                    </a>
-
-                    <a class="project-items__item" href="#">
-                        <div
-                            class="project-items__item-image project-image4"
-                        ></div>
-                        <div class="project-items__item-content">
-                            <div class="project-items__item-content__textbox">
-                                <h3
-                                    class="project-items__item-content__textbox-title"
-                                >
-                                    Современная кухня
-                                </h3>
-                                <p
-                                    class="project-items__item-content__textbox-text"
-                                >
-                                    Декор / Планировка
-                                </p>
-                            </div>
-                            <div
-                                class="project-items__item-content__button fas fa-chevron-right"
-                            ></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="counter center">
-            <div class="counter-area container">
-                <article class="counter-item">
-                    <h3 class="counter-item__title">12</h3>
-                    <p class="counter-item__text">Лет опыта</p>
-                </article>
-                <article class="counter-item">
-                    <h3 class="counter-item__title">85</h3>
-                    <p class="counter-item__text">Успешных проектов</p>
-                </article>
-                <article class="counter-item">
-                    <h3 class="counter-item__title">15</h3>
-                    <p class="counter-item__text">Проектов в работе</p>
-                </article>
-                <article class="counter-item">
-                    <h3 class="counter-item__title">95</h3>
-                    <p class="counter-item__text">Счастливых клиентов</p>
-                </article>
-            </div>
-        </section>
-
-        <section id="blog_items_app" class="blog center">
-            <div class="blog-area container">
-                <div class="blog-heading">
-                    <h2 class="blog-heading__title">{{ title }}</h2>
-                    <p class="blog-heading__text">
-                        {{ preTitle }}
-                    </p>
-                </div>
-
-                <div class="blog-items">
-                    <a :href="item.href" v-for="(item, index) in sortedByDateItems.slice(0, 3)" :key="index + 1" class="blog-items__item">
-                        <div class="blog-items__item__image-box">
-                            <img :src="item.image" :alt="item.tag" class="blog-items__item__image-box__image">
-                            <p class="blog-items__item__image-box__tag">
-                                {{ item.tag }}
-                            </p>
-                        </div>
-                        <h3 class="blog-items__item__title">
-                            {{ item.title }}
-                        </h3>
-                        <div class="blog-items__item__bottom-box">
-                            <p class="blog-items__item__bottom-box__date">
-                                {{ item.date }}
-                            </p>
-                            <div class="blog-items__item__bottom-box__button fas fa-chevron-right"></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <footer class="footer center">
-            <div class="footer-area container">
-                <div class="footer-social footer-box">
-                    <a class="header__logo" href="index.html">
-                        <img
-                            src="./public/images/Logo.png"
-                            alt=""
-                            class="header__logo-image"
-                        />
-                        <p class="header__logo-name">Interno</p>
-                    </a>
-                    <div class="footer-social__links">
-                        <a
-                            href="twitter.com"
-                            class="footer-social__links__link fab fa-twitter"
-                        ></a>
-                        <a
-                            href="linkedin.com"
-                            class="footer-social__links__link fab fa-linkedin-in"
-                        ></a>
-                    </div>
-                </div>
-
-                <div class="footer-pages footer-box">
-                    <h3 class="footer-box-title">Страницы</h3>
-                    <nav class="footer-pages__nav">
-                        <a href="index.html" class="footer-pages__nav-link"
-                            >Домой</a
-                        >
-                        <a href="#" class="footer-pages__nav-link">Проект</a>
-                        <a href="#" class="footer-pages__nav-link">Блог</a>
-                    </nav>
-                </div>
-
-                <div class="footer-contacts footer-box">
-                    <h3 class="footer-box-title">Контакты</h3>
-                    <div class="footer-contacts__box">
-                        <address class="footer-contacts__box-item">
-                            55 East Birchwood Ave. Brooklyn, New York 11201
-                        </address>
-                        <a
-                            href="mailto:contact@interno.com"
-                            class="footer-contacts__box-item"
-                            >contact@interno.com
-                        </a>
-                        <a
-                            href="tel:+1234567890"
-                            class="footer-contacts__box-item"
-                            >(123) 456 - 7890</a
-                        >
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </body>
+</body>
 </html>

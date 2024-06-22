@@ -21,4 +21,15 @@ function parseDate(dateString) {
     return new Date(year, months[month], parseInt(day));
 }
 
-export {parseDate};
+function savePostId(postId) {
+    if (postId) {
+        localStorage.setItem("chosenPostId", postId);
+    } else
+        localStorage.setItem("chosenPostId", "1");
+}
+
+function getChosenPostId() {
+    return localStorage.getItem("chosenPostId");
+}
+
+export {parseDate, savePostId, getChosenPostId};
